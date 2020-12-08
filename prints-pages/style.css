@@ -1,0 +1,288 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.wrap{
+    width: 80%;
+    /* border: solid black; */
+    margin: auto;
+    padding: 2em;
+}
+
+/* top row! */
+nav{
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
+    /* border: solid blue; */
+}
+
+.Logo{
+    width:10%;
+}
+
+.Logo img{
+    width: 100%;
+}
+
+ul{
+    list-style: none;
+}
+
+.menu-ctn > li{
+    display: inline-block;
+    width: 100px;
+    /* padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px; */
+    transition: all 0.5s ease;
+    position: relative;
+    /* margin-top: 20px; */
+}
+
+.menu-ctn li:hover{
+    cursor: pointer;
+    /* background-color: lightblue; */
+}
+
+
+#dropdown{
+    display: none;
+    position: absolute;
+    width: 15em;
+    height: 15em;
+    background-image: url(images/background-images/tile2.jpg);
+    z-index: 1;
+    text-align: center;
+    padding-top: 2em;
+    /* left: 0; */
+}
+
+#dropdown li{
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px; 
+    transition: all 0.5s ease;
+}
+
+#dropdown li:hover{
+    text-decoration: underline;
+}
+
+#dropdown.active{
+    display: block;
+}
+
+#burger{
+    width: 25px;
+}
+
+.line{
+    border-bottom:2px solid black;
+    margin-bottom: 5px;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+
+/* row 2 */
+
+.title{
+    font-size: 64px;
+    margin-top: 2em;
+}
+
+#wearables-wrap{
+    width: 100%;
+    display:grid;
+    grid-template-columns: auto auto;
+    margin-top: 4em;
+
+}
+
+#wearables-text{
+    margin-left: 6em;
+}
+
+#wearables-info{
+    width: 510px;
+    margin-top: 9.5em;
+}
+
+#wearables-info-img{
+    margin-left: 6em;
+}
+
+
+/* row 3 */
+.gallery{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    width: 100%;
+    margin-top: 5em;
+}
+
+.link{
+    width: 400px;
+    height: 400px;
+    /* border: 1px solid black; */
+    margin-right: -20em;
+    margin-bottom: 2em;
+    cursor: pointer;
+}
+
+.image{
+    opacity: 1;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+
+.wear-title{
+    transition: .5s ease;
+    opacity: 0;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}
+
+.text{
+    font-size: 36px;
+    z-index: 1;
+    margin-top: -6em;
+    margin-left: 9.5em;
+}
+
+#text-intergen{
+    margin-left: 7em;
+}
+
+.link:hover .image{
+    opacity: 0.3;
+}
+
+.link:hover .wear-title{
+    opacity: 1;
+}
+
+
+.second-row{
+    display: flex;
+    margin-top: 5em;
+    /* border: solid black; */
+}
+
+/* ///// slideshow ///// */
+.carousel-container{
+    width: 400px;
+    height: 400px;
+    /* margin: auto; */
+    overflow: hidden;
+    /* border: 5px solid black; */
+    position: relative;
+}
+
+.carousel-slide{
+   display: flex; 
+}
+
+/* previous button */
+#prevBtn{
+    margin-right: 2em;
+    margin-top: 12em;
+    width: 20px;
+    cursor: pointer;
+}
+
+#top-prev{
+    border-bottom:1.5px solid black;
+    transform: rotate(-45deg);
+}
+
+#bottom-prev{
+    margin-top: 12px;
+    border-top: 1.5px solid black;
+    transform: rotate(45deg);
+}
+
+/* next button */
+#nextBtn{
+    margin-left: 2em;
+    margin-top: 12em;
+    width: 20px;
+    cursor: pointer;
+}
+
+#top-next{
+    border-bottom: 1.5px solid black;
+    transform: rotate(45deg);
+}
+
+#bottom-next{
+    margin-top: 11px;
+    margin-right: 1px;
+    border-bottom: 1.5px solid black;
+    transform: rotate(-45deg);
+}
+
+/* ///// information  ///// */
+
+.info{
+    width: 20em;
+    margin-left: 10em;
+    margin-right: 10em;
+    margin-top: 8em;
+}
+
+#info-item1{
+    margin-top: 20em;
+}
+
+.item-title{
+    font-size: 36px;
+}
+
+.item-text{
+    margin-top: 2em;
+    margin-left: .3em;
+    opacity: 0.5;
+}
+
+.item-separator{
+    margin-top: 2em;
+    margin-left: .3em;
+    width: 100%;
+    border-bottom: 0.5px solid black;
+}
+
+.item-contact{
+    margin-left: .3em;
+    margin-top: 2em;
+}
+
+.mail{
+    color:rgb(53, 222, 154);
+}
+
+.mail:hover{
+    text-decoration: underline;
+}
+
+
+/*  ////////// row-3 //////////  */
+.separator-three{
+    width: 100%;
+    margin-top: 5em;
+    border-bottom: 1px solid grey;
+    opacity: 0.3;
+}
+
+.also-like{
+    margin-top: 5em;
+}
+
